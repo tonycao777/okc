@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="brCJi1kiGx6rZYk8oRPK">
-    <mxGraphModel dx="1026" dy="641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1466" dy="916" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -18,17 +18,6 @@
         </mxCell>
         <mxCell id="S3CmM38RQWoCAMPs-bgt-5" value="The API Server takes in the user input&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="90" y="250" width="220" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="S3CmM38RQWoCAMPs-bgt-7" value="User query" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry y="340" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="S3CmM38RQWoCAMPs-bgt-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=10;entryPerimeter=0;" edge="1" parent="1" source="S3CmM38RQWoCAMPs-bgt-7" target="S3CmM38RQWoCAMPs-bgt-1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="90" y="355" />
-              <mxPoint x="90" y="350" />
-            </Array>
-          </mxGeometry>
         </mxCell>
         <mxCell id="S3CmM38RQWoCAMPs-bgt-11" value="Cache (Redis) (stores frequently searched items)" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
           <mxGeometry x="600" y="250" width="120" height="80" as="geometry" />
@@ -89,6 +78,51 @@
         </mxCell>
         <mxCell id="S3CmM38RQWoCAMPs-bgt-25" value="Returns requested data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="200" y="650" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-26" value="" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="600" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-27" value="Result Filtering &amp;amp; Ranking" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="615" y="740" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="S3CmM38RQWoCAMPs-bgt-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="690" as="sourcePoint" />
+            <mxPoint x="603" y="698" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-29" value="Returns results for filtering. Then filters the search results and ranks them based on relevance." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="660" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-30" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="S3CmM38RQWoCAMPs-bgt-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="667" y="330" as="sourcePoint" />
+            <mxPoint x="615" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-31" value="If there&#39;s a match in frequently searched, send cached results for filtering and ranking" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="450" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-33" value="Display (User receives results)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="360" y="850" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-34" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.411;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="S3CmM38RQWoCAMPs-bgt-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="655" y="790" as="sourcePoint" />
+            <mxPoint x="705" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-35" value="User query" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry y="320" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=20;entryPerimeter=0;" edge="1" parent="1" source="S3CmM38RQWoCAMPs-bgt-35" target="S3CmM38RQWoCAMPs-bgt-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-37" value="Sends filtered and ranked results for display" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="830" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-39" value="The ranked suggestions are sent back to the frontend, where the user sees the autocomplete suggestions appear as they continue typing." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="295" y="990" width="250" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
