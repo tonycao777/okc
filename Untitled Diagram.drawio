@@ -31,7 +31,7 @@
         <mxCell id="S3CmM38RQWoCAMPs-bgt-13" value="Check for cached results.&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="510" y="195" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="S3CmM38RQWoCAMPs-bgt-14" value="Search Engine (Elasticsearch)&amp;nbsp;&lt;div&gt;(performs the actual search based on the query.)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-14" value="Search Engine (Elasticsearch, Fuzzy Search)&amp;nbsp;&lt;div&gt;(performs the actual search based on the query.)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="350" y="510" width="140" height="180" as="geometry" />
         </mxCell>
         <mxCell id="S3CmM38RQWoCAMPs-bgt-16" value="cache miss" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -82,7 +82,7 @@
         <mxCell id="S3CmM38RQWoCAMPs-bgt-26" value="" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=-180;" vertex="1" parent="1">
           <mxGeometry x="600" y="730" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="S3CmM38RQWoCAMPs-bgt-27" value="Result Filtering &amp;amp; Ranking" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="S3CmM38RQWoCAMPs-bgt-27" value="Result Filtering &amp;amp; Weighted Ranking" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="615" y="740" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="S3CmM38RQWoCAMPs-bgt-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="S3CmM38RQWoCAMPs-bgt-26">
